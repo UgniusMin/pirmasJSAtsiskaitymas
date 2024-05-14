@@ -1,0 +1,161 @@
+@mixin formElementStyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+@mixin formButtonStyle {
+    border-radius: 5px;
+    width: 20%;
+}
+
+.form__elements--primary {
+    @include formElementStyle();
+}
+
+.form__button--primary {
+    @include formButtonStyle();
+}
+
+
+
+// Responsive ( media )
+
+@media (max-width:1440px){
+    .form__elements--primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 20%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .form__button--primary {
+        border-radius: 5px;
+        width: 30%;
+    }
+}
+
+@media (max-width:1024px){
+    .form__elements--primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 20%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .form__button--primary {
+        border-radius: 5px;
+        width: 40%;
+    }
+}
+
+@media (max-width:768px){
+    .form__elements--primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 20%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .form__button--primary {
+        border-radius: 5px;
+        width: 50%;
+    }
+}
+
+@media (max-width:425px){
+    .form__elements--primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .form__button--primary {
+        border-radius: 5px;
+        width: 80%;
+    }
+}
+
+@media (max-width:375px){
+    .form__elements--primary {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .form__button--primary {
+        border-radius: 5px;
+        width: 50%;
+    }
+}
+
+.section__grid--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.icon img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.subject {
+    font-weight: bold;
+}
+
+.priority {
+    font-style: italic;
+}
+
+.due-date {
+    color: red;
+}
+
+.grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.grid-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-table td {
+    padding: 12px 20px;
+}
+
+.delete-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}

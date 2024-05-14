@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atsiskaitymas</title>
+    <link rel="stylesheet" href="/style/scss.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <div class="form__elements--primary" id="formElements">
+                    <button type="submit" class="form__button--primary" id="formButton">Add task</button>
+                    <label>Subject:</label>
+                    <input type="text" id="subjectText">
+                    <label>Priority:</label>
+                    <input type="radio" id="option1" name="priority" value="High">
+                    <label for="option1">High</label>
+                    <input type="radio" id="option2" name="priority" value="Normal">
+                    <label for="option2">Normal</label>
+                    <input type="radio" id="option3" name="priority" value="Low">
+                    <label for="option3">Low</label>
+                    <label>Due date:</label>
+                    <input type="date" id="dueDate">
+                </div>
+            </form>
+        </section>
+        <section>
+            <div id="gridContainer" class="section__grid--container"></div>
+        </section>
+    </main>
+
+    <script src="/modules/localStorage.js"></script>
+</body>
+</html>
